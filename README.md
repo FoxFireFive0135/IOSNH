@@ -13,3 +13,6 @@ IOSNH is my wonderful hobby os that is on its 8th attempt. This one seems to be 
 The ISO is compiled with a program that shows the "functionality" of the keyboard, its awful.
 
 I've compiled this under Ubuntu with the i686-elf-gcc cross-compiler https://wiki.osdev.org/GCC_Cross-Compiler
+
+note:
+  if you see the name "Bonnie" at all, that is just my mothers name, I let her use my garbo linux machine lol
