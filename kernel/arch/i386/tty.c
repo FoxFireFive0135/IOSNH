@@ -54,7 +54,8 @@ void t_putchar(char c) {
 	if (++t_column == VGA_WIDTH) {
 		t_column = 0;
 		if (++t_row == VGA_HEIGHT)
-			t_row = 0;
+			scroll();
+			t_row--;
 	}
 
 	update_cursor(t_column, t_row);
@@ -94,7 +95,8 @@ void cls()
     {
     	for (int y = 0; y < VGA_HEIGHT; ++y)
     	{
-    		t_buffer[x+y] = 0;
+    		const size_t index = y * VGA_WIDTH + x;
+			t_buffer[index] = vga_entry(' ', t_color);
     	}
     }
     /* Update out virtual cursor, and then move the

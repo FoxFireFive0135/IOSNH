@@ -53,7 +53,7 @@ unsigned char kbdus_lower[128] =
     0,	/* Delete Key */
     0,   0,   0,
     0,	/* F11 Key */
-    0,	/* F12 Key */
+    0xFF,	/* F12 Key */
     0,	/* All other keys are undefined */
 };
 
@@ -93,7 +93,7 @@ unsigned char kbdus_upper[128] =
     0,  /* Delete Key */
     0,   0,   0,
     0,  /* F11 Key */
-    0,  /* F12 Key */
+    0xFF,  /* F12 Key */
     0,  /* All other keys are undefined */
 };
 

@@ -33,7 +33,7 @@ static void pcs_nosound() {
 //Make a beep
 static void pcs_beep() {
 	 pcs_play_sound(1000);
-	 timer_wait(1);
+	 timer_wait(4);
 	 pcs_nosound();
 }
 
